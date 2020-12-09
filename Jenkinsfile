@@ -3,16 +3,16 @@ pipeline {
  stages {
         stage("Build") {
             steps {
-                bat 'php --version'
-                bat 'composer install'
-                bat 'composer --version'
-                bat 'cp .env.example .env'
-                bat 'php artisan key:generate'
+                sh 'php --version'
+                sh 'composer install'
+                sh 'composer --version'
+                sh 'cp .env.example .env'
+                sh 'php artisan key:generate'
             }
         }
         stage("Unit test") {
             steps {
-                bat 'php artisan test'
+                sh 'php artisan test'
             }
         }
   }
