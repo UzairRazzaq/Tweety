@@ -1,0 +1,64 @@
+[localhost] > git rev-parse --abbrev-ref HEAD
+[localhost] < master
+[142.93.0.65] > echo $0
+[142.93.0.65] < [error] getsockname failed: Not a socket
+[142.93.0.65] < [error] packet_write_poll: Connection to UNKNOWN port -1: Permission denied
+[Deployer\Exception\RuntimeException] The command "echo $0" failed.
+
+Exit Code: -1 (Unknown error)
+
+Host Name: 142.93.0.65
+
+================
+getsockname failed: Not a socket
+packet_write_poll: Connection to UNKNOWN port -1: Permission denied
+
+#0 C:\Users\Uzair\AppData\Roaming\Composer\vendor\deployer\deployer\src\functions.php(304): Deployer\Ssh\Client->run(Object(Deployer\Host\Host), 'echo $0', Array)
+#1 C:\Users\Uzair\AppData\Roaming\Composer\vendor\deployer\deployer\recipe\deploy\prepare.php(16): Deployer\run('echo $0')
+#2 [internal function]: Deployer\Deployer::Deployer\{closure}()
+#3 C:\Users\Uzair\AppData\Roaming\Composer\vendor\deployer\deployer\src\Task\Task.php(105): call_user_func(Object(Closure))
+#4 C:\Users\Uzair\AppData\Roaming\Composer\vendor\deployer\deployer\src\Executor\SeriesExecutor.php(60): Deployer\Task\Task->run(Object(Deployer\Task\Context))
+#5 C:\Users\Uzair\AppData\Roaming\Composer\vendor\deployer\deployer\src\Console\TaskCommand.php(144): Deployer\Executor\SeriesExecutor->run(Array, Array)
+#6 C:\Users\Uzair\AppData\Roaming\Composer\vendor\symfony\console\Command\Command.php(258): Deployer\Console\TaskCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Deployer\Console\Output\OutputWatcher))
+#7 C:\Users\Uzair\AppData\Roaming\Composer\vendor\symfony\console\Application.php(920): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Deployer\Console\Output\OutputWatcher))
+#8 C:\Users\Uzair\AppData\Roaming\Composer\vendor\deployer\deployer\src\Console\Application.php(133): Symfony\Component\Console\Application->doRunCommand(Object(Deployer\Console\TaskCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Deployer\Console\Output\OutputWatcher))
+#9 C:\Users\Uzair\AppData\Roaming\Composer\vendor\symfony\console\Application.php(266): Deployer\Console\Application->doRunCommand(Object(Deployer\Console\TaskCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Deployer\Console\Output\OutputWatcher))
+#10 C:\Users\Uzair\AppData\Roaming\Composer\vendor\symfony\console\Application.php(142): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\Users\Uzair\AppData\Roaming\Composer\vendor\deployer\deployer\src\Deployer.php(326): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\Users\Uzair\AppData\Roaming\Composer\vendor\deployer\deployer\bin\dep(137): Deployer\Deployer::run('v6.8.0', 'C:\\xampp\\htdocs...')
+#13 {main}
+[142.93.0.65] > rm -f /var/www/html/tweety/.dep/deploy.lock
+[142.93.0.65] < [error] getsockname failed: Not a socket
+[142.93.0.65] < [error] packet_write_poll: Connection to UNKNOWN port -1: Permission denied
+[localhost] > git rev-parse --abbrev-ref HEAD
+[localhost] < master
+[142.93.0.65] > echo $0
+[142.93.0.65] < [error] getsockname failed: Not a socket
+[142.93.0.65] < [error] packet_write_poll: Connection to UNKNOWN port -1: Permission denied
+[Deployer\Exception\RuntimeException] The command "echo $0" failed.
+
+Exit Code: -1 (Unknown error)
+
+Host Name: 142.93.0.65
+
+================
+getsockname failed: Not a socket
+packet_write_poll: Connection to UNKNOWN port -1: Permission denied
+
+#0 C:\Users\Uzair\AppData\Roaming\Composer\vendor\deployer\deployer\src\functions.php(304): Deployer\Ssh\Client->run(Object(Deployer\Host\Host), 'echo $0', Array)
+#1 C:\Users\Uzair\AppData\Roaming\Composer\vendor\deployer\deployer\recipe\deploy\prepare.php(16): Deployer\run('echo $0')
+#2 [internal function]: Deployer\Deployer::Deployer\{closure}()
+#3 C:\Users\Uzair\AppData\Roaming\Composer\vendor\deployer\deployer\src\Task\Task.php(105): call_user_func(Object(Closure))
+#4 C:\Users\Uzair\AppData\Roaming\Composer\vendor\deployer\deployer\src\Executor\SeriesExecutor.php(60): Deployer\Task\Task->run(Object(Deployer\Task\Context))
+#5 C:\Users\Uzair\AppData\Roaming\Composer\vendor\deployer\deployer\src\Console\TaskCommand.php(144): Deployer\Executor\SeriesExecutor->run(Array, Array)
+#6 C:\Users\Uzair\AppData\Roaming\Composer\vendor\symfony\console\Command\Command.php(258): Deployer\Console\TaskCommand->execute(Object(Symfony\Component\Console\Input\ArgvInput), Object(Deployer\Console\Output\OutputWatcher))
+#7 C:\Users\Uzair\AppData\Roaming\Composer\vendor\symfony\console\Application.php(920): Symfony\Component\Console\Command\Command->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Deployer\Console\Output\OutputWatcher))
+#8 C:\Users\Uzair\AppData\Roaming\Composer\vendor\deployer\deployer\src\Console\Application.php(133): Symfony\Component\Console\Application->doRunCommand(Object(Deployer\Console\TaskCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Deployer\Console\Output\OutputWatcher))
+#9 C:\Users\Uzair\AppData\Roaming\Composer\vendor\symfony\console\Application.php(266): Deployer\Console\Application->doRunCommand(Object(Deployer\Console\TaskCommand), Object(Symfony\Component\Console\Input\ArgvInput), Object(Deployer\Console\Output\OutputWatcher))
+#10 C:\Users\Uzair\AppData\Roaming\Composer\vendor\symfony\console\Application.php(142): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#11 C:\Users\Uzair\AppData\Roaming\Composer\vendor\deployer\deployer\src\Deployer.php(326): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#12 C:\Users\Uzair\AppData\Roaming\Composer\vendor\deployer\deployer\bin\dep(137): Deployer\Deployer::run('v6.8.0', 'C:\\xampp\\htdocs...')
+#13 {main}
+[142.93.0.65] > rm -f /var/www/html/tweety/.dep/deploy.lock
+[142.93.0.65] < [error] getsockname failed: Not a socket
+[142.93.0.65] < [error] packet_write_poll: Connection to UNKNOWN port -1: Permission denied
